@@ -57,20 +57,84 @@
       <li>ошибки вычисления выражений</li>
     </ul>
   </li>
-  <li>Для выражения <code>1000000 * x * x * x * x * x / (x - 1)</code> вывод программы должен иметь следующий вид:<pre>
-    x       f
-    0       0
-    1       division by zero
-    2       32000000
-    3       121500000
-    4       341333333
-    5       overflow
-    6       overflow
-    7       overflow
-    8       overflow
-    9       overflow
-    10      overflow</pre> Результат <code>division by zero (overflow)</code> означает, что в процессе вычисления произошло деление на ноль (переполнение).</li>
+  <li>Для выражения <code>1000000 * x * x * x * x * x / (x - 1)</code> вывод программы должен иметь следующий вид:
+    <table>
+      <tr>
+        <th><code>x</code></th>
+        <th><code>f</code></th>
+      </tr>
+      <tr>
+        <td><code>0</code></td>
+        <td><code>0</code></td>
+      </tr>
+      <tr>
+        <td><code>1</code></td>
+        <td><code>division by zero</code></td>
+      </tr>
+      <tr>
+        <td><code>2</code></td>
+        <td><code>32000000</code></td>
+      </tr>
+      <tr>
+        <td><code>3</code></td>
+        <td><code>121500000</code></td>
+      </tr>
+      <tr>
+        <td><code>4</code></td>
+        <td><code>341333333</code></td>
+      </tr>
+      <tr>
+        <td><code>5</code></td>
+        <td><code>overflow</code></td>
+      </tr>
+      <tr>
+        <td><code>6</code></td>
+        <td><code>overflow</code></td>
+      </tr>
+      <tr>
+        <td><code>7</code></td>
+        <td><code>overflow</code></td>
+      </tr>
+      <tr>
+        <td><code>8</code></td>
+        <td><code>overflow</code></td>
+      </tr>
+      <tr>
+        <td><code>9</code></td>
+        <td><code>overflow</code></td>
+      </tr>
+      <tr>
+        <td><code>10</code></td>
+        <td><code>overflow</code></td>
+      </tr>
+    </table>
+    Результат <code>division by zero (overflow)</code> означает, что в процессе вычисления произошло деление на ноль (переполнение).</li>
     <li>При выполнении задания следует обратить внимание на дизайн и обработку исключений.</li>
     <li>Человеко-читаемые сообщения об ошибках должны выводится на консоль.</li>
     <li>Программа не должна «вылетать» с исключениями (как стандартными, так и добавленными).</li> 
+</ol>
+
+* **GenericParser** <ol>
+     <li>Добавьте в программу разбирающую и вычисляющую выражения поддержку различных типов.<br>
+        Первым аргументом командной строки программа должна принимать указание на тип, в котором будут производится вычисления:
+        <table>
+          <tr>
+            <th>Опция</th>
+            <th>Тип</th>
+          </tr>
+          <tr>
+            <td><code>-i</code></td>
+            <td><code>int</code></td>
+          </tr>
+          <tr>
+            <td><code>-d</code></td>
+            <td><code>double</code></td>
+          </tr>
+          <tr>
+            <td><code>-bi</code></td>
+            <td><code>BigInteger</code></td>
+          </tr>
+       </table>
+       Вторым аргументом командной строки программа должна принимать выражение для вычисления.</li>
+    <li>При выполнении задания следует обратить внимание на легкость добавления новых типов и операциий.</li>   
 </ol>
