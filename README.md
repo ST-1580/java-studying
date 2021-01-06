@@ -210,3 +210,10 @@
   <li>Реализуйте класс <code>LinkedQueue</code> — очередь на связном списке.</li>
   <li>Выделите общие части классов <code>LinkedQueue</code> и <code>ArrayQueue</code> в базовый класс <code>AbstractQueue</code>.</li>
 </ol>
+
+* **TicTacToe** <ol>
+  <li>Реализуйте игру <a href="https://en.wikipedia.org/wiki/M,n,k-game">m, n, k</a>.</li>
+  <li>Добавьте обработку ошибок ввода пользователя.</li>
+  <li>Проверку выигрыша нужно производить за O(k).</li>
+  <li>Предотвратите жульничество: у игрока не должно быть возможности достать <code>Board</code> из <code>Position</code>.</li>   
+</ol>
