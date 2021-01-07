@@ -30,6 +30,7 @@ public class BigIntegerType implements ExpressionType<BigInteger> {
 
     @Override
     public BigInteger count(BigInteger body) {
+        // :NOTE: better to use `BigInteger#valueOf`
         return new BigInteger(Integer.toString(body.bitCount()));
     }
 
